@@ -27,7 +27,7 @@ def seir_rhs(t, Y, beta, gamma, kappa, N):
     dR =  gamma * I
     return np.array([dS, dE, dI, dR])
 
-def solver_fraccionario(f, alpha, y0, T, h=0.1):
+def solver_fraccionario(f, alpha, y0, T, h=0.05):
     n_steps = int(round(T / h))
     t = np.linspace(0, T, n_steps + 1)
     dim = len(y0)
@@ -92,7 +92,7 @@ st.title(" Sarampión Jalisco: efecto de la memoria (α)")
 st.markdown("Desliza α para ver cómo cambia la curva de casos predicha (con subreporte). Los demás parámetros se mantienen en los valores del mejor ajuste fraccionario.")
 
 alpha = st.slider("Orden fraccionario α", 0.10, 1.00, ALPHA_FIT, 0.01)
-
+p_usuario = st.slider("Fracción de reporte (p)", 0.0001, 0.5, P_REPORT, 0.001, format="%.4f")
 # Calcular solución con α elegido (usando beta e I0 fijos)
 with st.spinner("Calculando..."):
     sol_frac = solve_seir_frac(BETA_FIT, I0_FIT, alpha, t_data)
