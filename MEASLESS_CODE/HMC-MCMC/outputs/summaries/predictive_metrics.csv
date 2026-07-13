@@ -1,0 +1,2 @@
+"coverage_PI50_slice(0, 20, None)","coverage_PI95_slice(0, 20, None)","RMSE_slice(0, 20, None)","MAE_slice(0, 20, None)","coverage_PI50_slice(20, 25, None)","coverage_PI95_slice(20, 25, None)","RMSE_slice(20, 25, None)","MAE_slice(20, 25, None)",correlation
+0.5,0.95,104.42590001632138,73.96487499999999,0.2,0.4,38.44773185361524,31.02525,0.8231428351022855

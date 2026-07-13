@@ -1,0 +1,6 @@
+00:05:14 - cmdstanpy - INFO - compiling stan file /home/est_posgrado_omar.ramos/MEASLESS_CODE/HMC-MCMC/stan/seir_fracv.stan to exe file /home/est_posgrado_omar.ramos/MEASLESS_CODE/HMC-MCMC/stan/seir_fracv
+00:06:12 - cmdstanpy - INFO - compiled model executable: /home/est_posgrado_omar.ramos/MEASLESS_CODE/HMC-MCMC/stan/seir_fracv
+00:06:12 - cmdstanpy - INFO - Chain [1] start processing
+00:09:01 - cmdstanpy - INFO - Chain [1] done processing
+00:09:01 - cmdstanpy - WARNING - Non-fatal error during sampling:
+Exception: neg_binomial_2_lpmf: Location parameter is inf, but must be positive finite! (in 'seir_fracv.stan', line 204, column 4 to column 40)

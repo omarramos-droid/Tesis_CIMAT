@@ -1,0 +1,181 @@
+Población susceptible efectiva: 1548800
+Paso de integración (H): 0.05
+Número de observaciones: 20
+Rango de tiempo: 0 a 20 semanas
+
+======================================================================
+DIAGNÓSTICO DEL SOLVER
+======================================================================
+
+Comparando solvers para diferentes valores de α...
+
+======================================================================
+DIAGNÓSTICO: COMPARACIÓN DE SOLVERS
+======================================================================
+α        Error S(t)      Error Incidencia   Converge a ODE?
+----------------------------------------------------------------------
+0.500    0.58          % 100.00           % False
+0.700    0.49          % 85.87            % False
+0.900    0.25          % 42.52            % False
+0.950    0.14          % 23.65            % False
+0.990    0.03          % 5.15             % False
+1.000    0.00          % 0.00             % True
+======================================================================
+
+✅ Error para α=1:
+  Error en S(t): 0.0000%
+  Error en incidencia: 0.0002%
+  ✅ α=1 es consistente con ODEINT
+
+======================================================================
+AJUSTANDO MODELO FRACCIONARIO CON β(t) (α libre)
+======================================================================
+Iter 0050 | Loss=116.0572 | log_beta0=0.94013 | log_delta=-2.34855 | log_theta=2.53632 | log_p=-0.41497 | log_I0=5.23698 | alpha=0.95170
+Iter 0100 | Loss=115.8545 | log_beta0=0.90221 | log_delta=-2.35988 | log_theta=2.47797 | log_p=-0.39815 | log_I0=5.28593 | alpha=0.96089
+Iter 0150 | Loss=115.6656 | log_beta0=0.85788 | log_delta=-2.37043 | log_theta=2.39374 | log_p=-0.37079 | log_I0=5.36825 | alpha=0.97876
+Iter 0200 | Loss=115.2217 | log_beta0=0.91507 | log_delta=-2.28216 | log_theta=2.51112 | log_p=-0.41989 | log_I0=5.26237 | alpha=0.99982
+Iter 0250 | Loss=115.2146 | log_beta0=0.91605 | log_delta=-2.28289 | log_theta=2.52140 | log_p=-0.42263 | log_I0=5.25820 | alpha=1.00000
+Iter 0300 | Loss=115.2129 | log_beta0=0.91276 | log_delta=-2.28552 | log_theta=2.53808 | log_p=-0.42132 | log_I0=5.26524 | alpha=1.00000
+Iter 0350 | Loss=115.2129 | log_beta0=0.91259 | log_delta=-2.28566 | log_theta=2.53912 | log_p=-0.42141 | log_I0=5.26550 | alpha=1.00000
+Iter 0400 | Loss=115.2129 | log_beta0=0.91259 | log_delta=-2.28566 | log_theta=2.53912 | log_p=-0.42141 | log_I0=5.26550 | alpha=1.00000
+
+======================================================================
+AJUSTANDO MODELO ODEINT CLÁSICO CON β(t)
+======================================================================
+Iter 0050 | Loss=115.2141 | log_beta0=0.91672 | log_delta=-2.28214 | log_theta=2.54014 | log_p=-0.41182 | log_I0=5.24604
+Iter 0100 | Loss=115.2141 | log_beta0=0.91651 | log_delta=-2.28249 | log_theta=2.54007 | log_p=-0.41181 | log_I0=5.24657
+Iter 0150 | Loss=115.2139 | log_beta0=0.91582 | log_delta=-2.28307 | log_theta=2.53976 | log_p=-0.41193 | log_I0=5.24757
+Iter 0200 | Loss=115.2139 | log_beta0=0.91582 | log_delta=-2.28307 | log_theta=2.53976 | log_p=-0.41193 | log_I0=5.24757
+Iter 0250 | Loss=115.2381 | log_beta0=0.93188 | log_delta=-2.26714 | log_theta=2.54688 | log_p=-0.40931 | log_I0=5.22162
+Iter 0300 | Loss=115.2139 | log_beta0=0.91582 | log_delta=-2.28307 | log_theta=2.53976 | log_p=-0.41193 | log_I0=5.24757
+Iter 0350 | Loss=115.2139 | log_beta0=0.91582 | log_delta=-2.28307 | log_theta=2.53977 | log_p=-0.41193 | log_I0=5.24756
+Iter 0400 | Loss=115.2139 | log_beta0=0.91583 | log_delta=-2.28307 | log_theta=2.53977 | log_p=-0.41193 | log_I0=5.24756
+Iter 0450 | Loss=115.2139 | log_beta0=0.91583 | log_delta=-2.28307 | log_theta=2.53976 | log_p=-0.41190 | log_I0=5.24756
+Iter 0500 | Loss=115.2139 | log_beta0=0.91582 | log_delta=-2.28307 | log_theta=2.53900 | log_p=-0.41147 | log_I0=5.24757
+Iter 0550 | Loss=115.2139 | log_beta0=0.91582 | log_delta=-2.28308 | log_theta=2.53825 | log_p=-0.41161 | log_I0=5.24758
+Iter 0600 | Loss=115.2139 | log_beta0=0.91582 | log_delta=-2.28307 | log_theta=2.53794 | log_p=-0.41158 | log_I0=5.24757
+Iter 0650 | Loss=115.2139 | log_beta0=0.91582 | log_delta=-2.28307 | log_theta=2.53823 | log_p=-0.41161 | log_I0=5.24757
+Iter 0700 | Loss=115.2139 | log_beta0=0.91580 | log_delta=-2.28308 | log_theta=2.53804 | log_p=-0.41153 | log_I0=5.24755
+Iter 0750 | Loss=115.2139 | log_beta0=0.91580 | log_delta=-2.28308 | log_theta=2.53803 | log_p=-0.41152 | log_I0=5.24755
+Iter 0800 | Loss=115.2139 | log_beta0=0.91580 | log_delta=-2.28308 | log_theta=2.53824 | log_p=-0.41151 | log_I0=5.24755
+Iter 0850 | Loss=115.2139 | log_beta0=0.91580 | log_delta=-2.28308 | log_theta=2.53822 | log_p=-0.41152 | log_I0=5.24755
+Iter 0900 | Loss=115.2139 | log_beta0=0.91580 | log_delta=-2.28308 | log_theta=2.53825 | log_p=-0.41151 | log_I0=5.24755
+Iter 0950 | Loss=115.2139 | log_beta0=0.91580 | log_delta=-2.28308 | log_theta=2.53803 | log_p=-0.41153 | log_I0=5.24756
+Iter 1000 | Loss=115.2139 | log_beta0=0.91579 | log_delta=-2.28308 | log_theta=2.53760 | log_p=-0.41145 | log_I0=5.24757
+Iter 1050 | Loss=115.2139 | log_beta0=0.91578 | log_delta=-2.28308 | log_theta=2.53773 | log_p=-0.41170 | log_I0=5.24758
+Iter 1100 | Loss=115.2139 | log_beta0=0.91578 | log_delta=-2.28307 | log_theta=2.53841 | log_p=-0.41138 | log_I0=5.24758
+Iter 1150 | Loss=115.2139 | log_beta0=0.91578 | log_delta=-2.28307 | log_theta=2.53840 | log_p=-0.41140 | log_I0=5.24758
+Iter 1200 | Loss=115.2139 | log_beta0=0.91578 | log_delta=-2.28307 | log_theta=2.53840 | log_p=-0.41140 | log_I0=5.24758
+
+--- REPORTE FRACCIONARIO CON β(t) ---
+[[Fit Statistics]]
+    # fitting method   = L-BFGS-B
+    # function evals   = 413
+    # data points      = 1
+    # variables        = 6
+    chi-square         = 13274.0210
+    reduced chi-square = 13274.0210
+    Akaike info crit   = 21.4935641
+    Bayesian info crit = 9.49356410
+##  Warning: uncertainties could not be estimated:
+    alpha:      at boundary
+[[Variables]]
+    log_beta0:  0.91259364 (init = 0.91671)
+    log_delta: -2.28565640 (init = -2.28193)
+    log_theta:  2.53912140 (init = 2.54016)
+    log_p:     -0.42141196 (init = -0.41185)
+    log_I0:     5.26549619 (init = 5.24592)
+    alpha:      0.99999949 (init = 0.95)
+    gamma:      0.875 (fixed)
+    kappa:      0.5 (fixed)
+    N:          1548800 (fixed)
+
+--- Fraccional β(t) (α libre) ---
+  β₀     = 2.4908
+  δ      = 0.1017
+  θ      = 12.6685
+  p      = 0.656120
+  I₀     = 193.5
+  E₀     = 0.0 (fijo)
+  S₀     = 1548606
+  α      = 1.0000
+  γ      = 0.8750 (fijo)
+  κ      = 0.5000 (fijo)
+  N      = 1548800 (fijo)
+
+--- REPORTE ODEINT CLÁSICO CON β(t) ---
+[[Fit Statistics]]
+    # fitting method   = L-BFGS-B
+    # function evals   = 1200
+    # data points      = 1
+    # variables        = 5
+    chi-square         = 13274.2409
+    reduced chi-square = 13274.2409
+    Akaike info crit   = 19.4935807
+    Bayesian info crit = 9.49358066
+##  Warning: uncertainties could not be estimated:
+[[Variables]]
+    log_beta0:  0.91577752 (init = 0.91671)
+    log_delta: -2.28307171 (init = -2.28193)
+    log_theta:  2.53839557 (init = 2.54016)
+    log_p:     -0.41140136 (init = -0.41185)
+    log_I0:     5.24757778 (init = 5.24592)
+    gamma:      0.875 (fixed)
+    kappa:      0.5 (fixed)
+    N:          1548800 (fixed)
+
+--- ODEINT β(t) clásico ---
+  β₀     = 2.4987
+  δ      = 0.1020
+  θ      = 12.6593
+  p      = 0.662721
+  I₀     = 190.1
+  E₀     = 0.0 (fijo)
+  S₀     = 1548610
+  γ      = 0.8750 (fijo)
+  κ      = 0.5000 (fijo)
+  N      = 1548800 (fijo)
+
+======================================================================
+PERFILES BIVARIADOS - MODELO FRACCIONARIO CON β(t)
+======================================================================
+
+1. Perfil bivariado: α vs β₀
+  Progreso bivariado: 50/625 puntos
+  Progreso bivariado: 100/625 puntos
+  Progreso bivariado: 150/625 puntos
+  Progreso bivariado: 200/625 puntos
+  Progreso bivariado: 250/625 puntos
+  Progreso bivariado: 300/625 puntos
+  Progreso bivariado: 350/625 puntos
+  Progreso bivariado: 400/625 puntos
+  Progreso bivariado: 450/625 puntos
+  Progreso bivariado: 500/625 puntos
+  Progreso bivariado: 550/625 puntos
+  Progreso bivariado: 600/625 puntos
+
+2. Perfil bivariado: α vs δ
+  Progreso bivariado: 50/625 puntos
+  Progreso bivariado: 100/625 puntos
+  Progreso bivariado: 150/625 puntos
+  Progreso bivariado: 200/625 puntos
+  Progreso bivariado: 250/625 puntos
+  Progreso bivariado: 300/625 puntos
+  Progreso bivariado: 350/625 puntos
+  Progreso bivariado: 400/625 puntos
+  Progreso bivariado: 450/625 puntos
+  Progreso bivariado: 500/625 puntos
+  Progreso bivariado: 550/625 puntos
+  Progreso bivariado: 600/625 puntos
+
+3. Perfil bivariado: β₀ vs δ
+  Progreso bivariado: 50/625 puntos
+  Progreso bivariado: 100/625 puntos
+  Progreso bivariado: 150/625 puntos
+  Progreso bivariado: 200/625 puntos
+  Progreso bivariado: 250/625 puntos
+  Progreso bivariado: 300/625 puntos
+  Progreso bivariado: 350/625 puntos
+  Progreso bivariado: 400/625 puntos
+  Progreso bivariado: 450/625 puntos
+  Progreso bivariado: 500/625 puntos

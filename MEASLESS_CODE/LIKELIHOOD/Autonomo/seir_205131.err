@@ -1,0 +1,6 @@
+/home/est_posgrado_omar.ramos/MEASLESS_CODE/LIKELIHOOD/Autonomo/seir_lib_Sobreajuste.py:24: RuntimeWarning: overflow encountered in scalar multiply
+  dS = -beta * S * I / N
+/home/est_posgrado_omar.ramos/MEASLESS_CODE/LIKELIHOOD/Autonomo/seir_lib_Sobreajuste.py:25: RuntimeWarning: overflow encountered in scalar multiply
+  dE =  beta * S * I / N - kappa * E
+/home/est_posgrado_omar.ramos/MEASLESS_CODE/LIKELIHOOD/Autonomo/seir_lib_Sobreajuste.py:54: RuntimeWarning: invalid value encountered in add
+  y[n] = y[0] + (h_alpha / gamma_alpha2) * (np.dot(a[:n], fvals[:n]) + a[n] * f_pred)

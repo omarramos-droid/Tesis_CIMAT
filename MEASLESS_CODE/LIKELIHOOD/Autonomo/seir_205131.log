@@ -1,0 +1,867 @@
+Población susceptible efectiva: 1548800
+
+AJUSTANDO MODELO FRACCIONARIO (α libre)
+Iter 0050 | Loss=140.3399 | log_beta=1.63481 | log_theta=-0.27245 | log_p=-4.07748 | log_I0=6.20200 | alpha=0.44580
+Iter 0100 | Loss=706.0648 | log_beta=0.99317 | log_theta=4.59486 | log_p=-5.84659 | log_I0=10.30467 | alpha=0.60389
+Iter 0150 | Loss=109.7513 | log_beta=1.29107 | log_theta=3.38317 | log_p=-5.08791 | log_I0=8.94619 | alpha=0.53156
+Iter 0200 | Loss=105.7763 | log_beta=1.55310 | log_theta=3.58898 | log_p=-4.91678 | log_I0=7.72867 | alpha=0.30717
+
+AJUSTANDO FRACCIONARIO α=1
+Iter 0050 | Loss=148.3375 | log_beta=0.66005 | log_theta=-1.24017 | log_p=-4.96524 | log_I0=9.60970
+Iter 0100 | Loss=132.8697 | log_beta=0.71339 | log_theta=2.15158 | log_p=-5.27212 | log_I0=10.81395
+Iter 0150 | Loss=115.7681 | log_beta=0.57407 | log_theta=2.47015 | log_p=-5.22687 | log_I0=10.75852
+
+AJUSTANDO MODELO CLÁSICO ODEINT
+Iter 0050 | Loss=146.7586 | log_beta=1.22761 | log_theta=-0.59173 | log_p=-4.74412 | log_I0=8.15125
+Iter 0100 | Loss=1973.3409 | log_beta=0.30078 | log_theta=4.13323 | log_p=-6.33846 | log_I0=10.57071
+Iter 0150 | Loss=115.6250 | log_beta=0.60235 | log_theta=2.49524 | log_p=-5.24347 | log_I0=10.64212
+
+--- REPORTE FRACCIONARIO ---
+[[Fit Statistics]]
+    # fitting method   = L-BFGS-B
+    # function evals   = 240
+    # data points      = 1
+    # variables        = 5
+    chi-square         = 11182.5121
+    reduced chi-square = 11182.5121
+    Akaike info crit   = 19.3221064
+    Bayesian info crit = 9.32210641
+##  Warning: uncertainties could not be estimated:
+[[Variables]]
+    log_beta:   1.54337743 (init = 2.564949)
+    log_theta:  3.57065821 (init = 0.6931472)
+    log_p:     -4.92643268 (init = -7.600902)
+    log_I0:     7.79668699 (init = 6.214608)
+    alpha:      0.31818806 (init = 0.1)
+    gamma:      0.875 (fixed)
+    kappa:      0.5 (fixed)
+    N:          1548800 (fixed)
+
+--- Fraccional (α libre) ---
+  beta   = 4.6804
+  theta  = 35.5400
+  p      = 0.007252
+  I0     = 2432.5
+  E0     = 0.0 (fijo)
+  S0     = 1546367
+  alpha  = 0.3182
+  gamma  = 0.8750 (fijo)
+  kappa  = 0.5000 (fijo)
+  N      = 1548800 (fijo)
+
+--- REPORTE FRACCIONARIO α=1 ---
+[[Fit Statistics]]
+    # fitting method   = L-BFGS-B
+    # function evals   = 195
+    # data points      = 1
+    # variables        = 4
+    chi-square         = 13368.9195
+    reduced chi-square = 13368.9195
+    Akaike info crit   = 17.5006878
+    Bayesian info crit = 9.50068785
+##  Warning: uncertainties could not be estimated:
+[[Variables]]
+    log_beta:   0.60180245 (init = 2.564949)
+    log_theta:  2.49572945 (init = 0.6931472)
+    log_p:     -5.24309385 (init = -2.995732)
+    log_I0:     10.6462740 (init = 6.214608)
+    alpha:      1 (fixed)
+    gamma:      0.875 (fixed)
+    kappa:      0.5 (fixed)
+    N:          1548800 (fixed)
+
+--- Fraccional (α=1) ---
+  beta   = 1.8254
+  theta  = 12.1306
+  p      = 0.005284
+  I0     = 42035.7
+  E0     = 0.0 (fijo)
+  S0     = 1506764
+  alpha  = 1.0000
+  gamma  = 0.8750 (fijo)
+  kappa  = 0.5000 (fijo)
+  N      = 1548800 (fijo)
+
+--- REPORTE ODEINT CLÁSICO ---
+[[Fit Statistics]]
+    # fitting method   = L-BFGS-B
+    # function evals   = 185
+    # data points      = 1
+    # variables        = 4
+    chi-square         = 13369.0479
+    reduced chi-square = 13369.0479
+    Akaike info crit   = 17.5006975
+    Bayesian info crit = 9.50069745
+##  Warning: uncertainties could not be estimated:
+[[Variables]]
+    log_beta:   0.60184281 (init = 2.564949)
+    log_theta:  2.49567650 (init = 0.6931472)
+    log_p:     -5.24310081 (init = -2.995732)
+    log_I0:     10.6462224 (init = 6.214608)
+    gamma:      0.875 (fixed)
+    kappa:      0.5 (fixed)
+    N:          1548800 (fixed)
+
+--- ODEINT clásico ---
+  beta   = 1.8255
+  theta  = 12.1299
+  p      = 0.005284
+  I0     = 42033.5
+  E0     = 0.0 (fijo)
+  S0     = 1506766
+  gamma  = 0.8750 (fijo)
+  kappa  = 0.5000 (fijo)
+  N      = 1548800 (fijo)
+
+ CRITERIOS DE INFORMACIÓN
+Modelo                          logL    k        AIC        BIC
+Fraccional (α libre)         -105.75    5     221.49     226.47
+Fraccional (α=1)             -115.62    4     239.25     243.23
+ODEINT clásico               -115.62    4     239.25     243.23
+
+ LIKELIHOOD RATIO TEST (Fraccional vs α=1)
+LRT = 19.7533, df = 1, p-value = 0.00001
+
+--- Perfiles bivariados fraccionarios ---
+Perfil α-β
+  Progreso bivariado: 50/400 puntos
+  Progreso bivariado: 100/400 puntos
+  Progreso bivariado: 150/400 puntos
+  Progreso bivariado: 200/400 puntos
+  Progreso bivariado: 250/400 puntos
+  Progreso bivariado: 300/400 puntos
+  Progreso bivariado: 350/400 puntos
+  Progreso bivariado: 400/400 puntos
+Perfil α-p
+Perfil β-p
+Perfil I₀-p
+
+--- Perfiles bivariados ODEINT ---
+Zode_PI0
+Zode_bp
+  Progreso ODEINT bivariado: 50/10000 puntos
+Fallo en (log_beta=0.1018, log_p=-4.9749)
+  Progreso ODEINT bivariado: 100/10000 puntos
+  Progreso ODEINT bivariado: 150/10000 puntos
+Fallo en (log_beta=0.1119, log_p=-4.9882)
+  Progreso ODEINT bivariado: 200/10000 puntos
+  Progreso ODEINT bivariado: 250/10000 puntos
+  Progreso ODEINT bivariado: 300/10000 puntos
+  Progreso ODEINT bivariado: 350/10000 puntos
+  Progreso ODEINT bivariado: 400/10000 puntos
+  Progreso ODEINT bivariado: 450/10000 puntos
+Fallo en (log_beta=0.1422, log_p=-4.9926)
+  Progreso ODEINT bivariado: 500/10000 puntos
+  Progreso ODEINT bivariado: 550/10000 puntos
+  Progreso ODEINT bivariado: 600/10000 puntos
+  Progreso ODEINT bivariado: 650/10000 puntos
+  Progreso ODEINT bivariado: 700/10000 puntos
+Fallo en (log_beta=0.1725, log_p=-5.5215)
+Fallo en (log_beta=0.1725, log_p=-5.4555)
+  Progreso ODEINT bivariado: 750/10000 puntos
+Fallo en (log_beta=0.1725, log_p=-5.0764)
+Fallo en (log_beta=0.1725, log_p=-5.0244)
+  Progreso ODEINT bivariado: 800/10000 puntos
+Fallo en (log_beta=0.1827, log_p=-5.4698)
+  Progreso ODEINT bivariado: 850/10000 puntos
+Fallo en (log_beta=0.1827, log_p=-5.1839)
+  Progreso ODEINT bivariado: 900/10000 puntos
+  Progreso ODEINT bivariado: 950/10000 puntos
+  Progreso ODEINT bivariado: 1000/10000 puntos
+  Progreso ODEINT bivariado: 1050/10000 puntos
+  Progreso ODEINT bivariado: 1100/10000 puntos
+  Progreso ODEINT bivariado: 1150/10000 puntos
+  Progreso ODEINT bivariado: 1200/10000 puntos
+  Progreso ODEINT bivariado: 1250/10000 puntos
+  Progreso ODEINT bivariado: 1300/10000 puntos
+  Progreso ODEINT bivariado: 1350/10000 puntos
+  Progreso ODEINT bivariado: 1400/10000 puntos
+  Progreso ODEINT bivariado: 1450/10000 puntos
+  Progreso ODEINT bivariado: 1500/10000 puntos
+  Progreso ODEINT bivariado: 1550/10000 puntos
+  Progreso ODEINT bivariado: 1600/10000 puntos
+  Progreso ODEINT bivariado: 1650/10000 puntos
+  Progreso ODEINT bivariado: 1700/10000 puntos
+  Progreso ODEINT bivariado: 1750/10000 puntos
+  Progreso ODEINT bivariado: 1800/10000 puntos
+  Progreso ODEINT bivariado: 1850/10000 puntos
+  Progreso ODEINT bivariado: 1900/10000 puntos
+  Progreso ODEINT bivariado: 1950/10000 puntos
+  Progreso ODEINT bivariado: 2000/10000 puntos
+Fallo en (log_beta=0.3039, log_p=-5.2983)
+  Progreso ODEINT bivariado: 2050/10000 puntos
+Fallo en (log_beta=0.3039, log_p=-5.0764)
+  Progreso ODEINT bivariado: 2100/10000 puntos
+Fallo en (log_beta=0.3140, log_p=-5.2169)
+  Progreso ODEINT bivariado: 2150/10000 puntos
+Fallo en (log_beta=0.3140, log_p=-5.1313)
+Fallo en (log_beta=0.3140, log_p=-5.1261)
+Fallo en (log_beta=0.3140, log_p=-5.0477)
+Fallo en (log_beta=0.3140, log_p=-5.0198)
+  Progreso ODEINT bivariado: 2200/10000 puntos
+  Progreso ODEINT bivariado: 2250/10000 puntos
+  Progreso ODEINT bivariado: 2300/10000 puntos
+  Progreso ODEINT bivariado: 2350/10000 puntos
+  Progreso ODEINT bivariado: 2400/10000 puntos
+Fallo en (log_beta=0.3443, log_p=-5.3608)
+Fallo en (log_beta=0.3443, log_p=-5.2058)
+  Progreso ODEINT bivariado: 2450/10000 puntos
+Fallo en (log_beta=0.3443, log_p=-5.1364)
+Fallo en (log_beta=0.3443, log_p=-5.0667)
+Fallo en (log_beta=0.3443, log_p=-5.0290)
+  Progreso ODEINT bivariado: 2500/10000 puntos
+  Progreso ODEINT bivariado: 2550/10000 puntos
+Fallo en (log_beta=0.3544, log_p=-5.1839)
+Fallo en (log_beta=0.3544, log_p=-5.1785)
+Fallo en (log_beta=0.3544, log_p=-5.0336)
+Fallo en (log_beta=0.3544, log_p=-5.0290)
+Fallo en (log_beta=0.3544, log_p=-5.0244)
+Fallo en (log_beta=0.3544, log_p=-4.9882)
+Fallo en (log_beta=0.3544, log_p=-4.9793)
+  Progreso ODEINT bivariado: 2600/10000 puntos
+Fallo en (log_beta=0.3645, log_p=-5.4207)
+Fallo en (log_beta=0.3645, log_p=-5.2169)
+  Progreso ODEINT bivariado: 2650/10000 puntos
+Fallo en (log_beta=0.3645, log_p=-5.1160)
+Fallo en (log_beta=0.3645, log_p=-5.0764)
+Fallo en (log_beta=0.3645, log_p=-5.0061)
+  Progreso ODEINT bivariado: 2700/10000 puntos
+Fallo en (log_beta=0.3746, log_p=-5.2338)
+Fallo en (log_beta=0.3746, log_p=-5.2058)
+  Progreso ODEINT bivariado: 2750/10000 puntos
+Fallo en (log_beta=0.3746, log_p=-5.1785)
+Fallo en (log_beta=0.3746, log_p=-5.1160)
+  Progreso ODEINT bivariado: 2800/10000 puntos
+Fallo en (log_beta=0.3847, log_p=-5.2510)
+  Progreso ODEINT bivariado: 2850/10000 puntos
+Fallo en (log_beta=0.3847, log_p=-5.0336)
+Fallo en (log_beta=0.3847, log_p=-5.0152)
+  Progreso ODEINT bivariado: 2900/10000 puntos
+Fallo en (log_beta=0.3948, log_p=-5.2281)
+  Progreso ODEINT bivariado: 2950/10000 puntos
+Fallo en (log_beta=0.3948, log_p=-5.1839)
+Fallo en (log_beta=0.3948, log_p=-5.0861)
+Fallo en (log_beta=0.3948, log_p=-5.0667)
+Fallo en (log_beta=0.3948, log_p=-5.0198)
+Fallo en (log_beta=0.3948, log_p=-5.0106)
+Fallo en (log_beta=0.3948, log_p=-5.0016)
+Fallo en (log_beta=0.3948, log_p=-4.9926)
+Fallo en (log_beta=0.3948, log_p=-4.9662)
+  Progreso ODEINT bivariado: 3000/10000 puntos
+  Progreso ODEINT bivariado: 3050/10000 puntos
+Fallo en (log_beta=0.4049, log_p=-5.1110)
+Fallo en (log_beta=0.4049, log_p=-5.0813)
+  Progreso ODEINT bivariado: 3100/10000 puntos
+Fallo en (log_beta=0.4150, log_p=-5.4626)
+Fallo en (log_beta=0.4150, log_p=-5.4071)
+Fallo en (log_beta=0.4150, log_p=-5.2395)
+  Progreso ODEINT bivariado: 3150/10000 puntos
+Fallo en (log_beta=0.4150, log_p=-5.1416)
+Fallo en (log_beta=0.4150, log_p=-5.1364)
+Fallo en (log_beta=0.4150, log_p=-5.1211)
+Fallo en (log_beta=0.4150, log_p=-5.1110)
+Fallo en (log_beta=0.4150, log_p=-5.0290)
+Fallo en (log_beta=0.4150, log_p=-4.9971)
+  Progreso ODEINT bivariado: 3200/10000 puntos
+Fallo en (log_beta=0.4251, log_p=-5.4484)
+  Progreso ODEINT bivariado: 3250/10000 puntos
+Fallo en (log_beta=0.4251, log_p=-5.0430)
+Fallo en (log_beta=0.4251, log_p=-5.0016)
+  Progreso ODEINT bivariado: 3300/10000 puntos
+Fallo en (log_beta=0.4352, log_p=-5.4555)
+  Progreso ODEINT bivariado: 3350/10000 puntos
+Fallo en (log_beta=0.4352, log_p=-5.1313)
+Fallo en (log_beta=0.4352, log_p=-5.0861)
+  Progreso ODEINT bivariado: 3400/10000 puntos
+Fallo en (log_beta=0.4453, log_p=-5.3870)
+Fallo en (log_beta=0.4453, log_p=-5.3417)
+Fallo en (log_beta=0.4453, log_p=-5.3044)
+  Progreso ODEINT bivariado: 3450/10000 puntos
+Fallo en (log_beta=0.4453, log_p=-5.1364)
+Fallo en (log_beta=0.4453, log_p=-5.1313)
+Fallo en (log_beta=0.4453, log_p=-5.1261)
+Fallo en (log_beta=0.4453, log_p=-5.1059)
+  Progreso ODEINT bivariado: 3500/10000 puntos
+Fallo en (log_beta=0.4554, log_p=-5.3608)
+  Progreso ODEINT bivariado: 3550/10000 puntos
+Fallo en (log_beta=0.4554, log_p=-5.0061)
+  Progreso ODEINT bivariado: 3600/10000 puntos
+Fallo en (log_beta=0.4655, log_p=-5.4414)
+  Progreso ODEINT bivariado: 3650/10000 puntos
+Fallo en (log_beta=0.4655, log_p=-5.0861)
+Fallo en (log_beta=0.4655, log_p=-5.0715)
+Fallo en (log_beta=0.4655, log_p=-5.0572)
+Fallo en (log_beta=0.4655, log_p=-4.9882)
+Fallo en (log_beta=0.4655, log_p=-4.9749)
+  Progreso ODEINT bivariado: 3700/10000 puntos
+  Progreso ODEINT bivariado: 3750/10000 puntos
+  Progreso ODEINT bivariado: 3800/10000 puntos
+Fallo en (log_beta=0.4857, log_p=-5.4626)
+Fallo en (log_beta=0.4857, log_p=-5.3804)
+  Progreso ODEINT bivariado: 3850/10000 puntos
+  Progreso ODEINT bivariado: 3900/10000 puntos
+Fallo en (log_beta=0.4958, log_p=-5.4414)
+  Progreso ODEINT bivariado: 3950/10000 puntos
+  Progreso ODEINT bivariado: 4000/10000 puntos
+Fallo en (log_beta=0.5059, log_p=-5.4698)
+Fallo en (log_beta=0.5059, log_p=-5.2510)
+  Progreso ODEINT bivariado: 4050/10000 puntos
+Fallo en (log_beta=0.5059, log_p=-5.0061)
+Fallo en (log_beta=0.5059, log_p=-4.9749)
+  Progreso ODEINT bivariado: 4100/10000 puntos
+  Progreso ODEINT bivariado: 4150/10000 puntos
+Fallo en (log_beta=0.5160, log_p=-5.1468)
+  Progreso ODEINT bivariado: 4200/10000 puntos
+  Progreso ODEINT bivariado: 4250/10000 puntos
+Fallo en (log_beta=0.5261, log_p=-5.0198)
+Fallo en (log_beta=0.5261, log_p=-5.0152)
+Fallo en (log_beta=0.5261, log_p=-4.9971)
+  Progreso ODEINT bivariado: 4300/10000 puntos
+Fallo en (log_beta=0.5362, log_p=-5.2568)
+Fallo en (log_beta=0.5362, log_p=-5.2281)
+  Progreso ODEINT bivariado: 4350/10000 puntos
+Fallo en (log_beta=0.5362, log_p=-5.0667)
+Fallo en (log_beta=0.5362, log_p=-5.0106)
+  Progreso ODEINT bivariado: 4400/10000 puntos
+  Progreso ODEINT bivariado: 4450/10000 puntos
+  Progreso ODEINT bivariado: 4500/10000 puntos
+  Progreso ODEINT bivariado: 4550/10000 puntos
+Fallo en (log_beta=0.5564, log_p=-5.0619)
+Fallo en (log_beta=0.5564, log_p=-5.0572)
+Fallo en (log_beta=0.5564, log_p=-4.9749)
+  Progreso ODEINT bivariado: 4600/10000 puntos
+  Progreso ODEINT bivariado: 4650/10000 puntos
+Fallo en (log_beta=0.5665, log_p=-5.1520)
+Fallo en (log_beta=0.5665, log_p=-4.9971)
+Fallo en (log_beta=0.5665, log_p=-4.9837)
+  Progreso ODEINT bivariado: 4700/10000 puntos
+Fallo en (log_beta=0.5766, log_p=-5.5139)
+Fallo en (log_beta=0.5766, log_p=-5.4003)
+  Progreso ODEINT bivariado: 4750/10000 puntos
+Fallo en (log_beta=0.5766, log_p=-5.0715)
+Fallo en (log_beta=0.5766, log_p=-4.9926)
+Fallo en (log_beta=0.5766, log_p=-4.9793)
+  Progreso ODEINT bivariado: 4800/10000 puntos
+  Progreso ODEINT bivariado: 4850/10000 puntos
+  Progreso ODEINT bivariado: 4900/10000 puntos
+Fallo en (log_beta=0.5968, log_p=-5.5139)
+Fallo en (log_beta=0.5968, log_p=-5.4071)
+  Progreso ODEINT bivariado: 4950/10000 puntos
+  Progreso ODEINT bivariado: 5000/10000 puntos
+  Progreso ODEINT bivariado: 5050/10000 puntos
+Fallo en (log_beta=0.6069, log_p=-5.1893)
+Fallo en (log_beta=0.6069, log_p=-5.0960)
+  Progreso ODEINT bivariado: 5100/10000 puntos
+  Progreso ODEINT bivariado: 5150/10000 puntos
+Fallo en (log_beta=0.6170, log_p=-5.1416)
+Fallo en (log_beta=0.6170, log_p=-5.1211)
+Fallo en (log_beta=0.6170, log_p=-4.9837)
+  Progreso ODEINT bivariado: 5200/10000 puntos
+Fallo en (log_beta=0.6271, log_p=-5.2744)
+  Progreso ODEINT bivariado: 5250/10000 puntos
+Fallo en (log_beta=0.6271, log_p=-5.1010)
+  Progreso ODEINT bivariado: 5300/10000 puntos
+  Progreso ODEINT bivariado: 5350/10000 puntos
+  Progreso ODEINT bivariado: 5400/10000 puntos
+Fallo en (log_beta=0.6473, log_p=-5.4003)
+Fallo en (log_beta=0.6473, log_p=-5.3738)
+Fallo en (log_beta=0.6473, log_p=-5.3417)
+  Progreso ODEINT bivariado: 5450/10000 puntos
+Fallo en (log_beta=0.6473, log_p=-5.1732)
+Fallo en (log_beta=0.6473, log_p=-5.1364)
+Fallo en (log_beta=0.6473, log_p=-5.1160)
+  Progreso ODEINT bivariado: 5500/10000 puntos
+Fallo en (log_beta=0.6574, log_p=-5.2685)
+  Progreso ODEINT bivariado: 5550/10000 puntos
+Fallo en (log_beta=0.6574, log_p=-5.0911)
+  Progreso ODEINT bivariado: 5600/10000 puntos
+Fallo en (log_beta=0.6675, log_p=-5.3673)
+  Progreso ODEINT bivariado: 5650/10000 puntos
+  Progreso ODEINT bivariado: 5700/10000 puntos
+Fallo en (log_beta=0.6776, log_p=-5.2169)
+  Progreso ODEINT bivariado: 5750/10000 puntos
+Fallo en (log_beta=0.6776, log_p=-5.1839)
+Fallo en (log_beta=0.6776, log_p=-5.1572)
+  Progreso ODEINT bivariado: 5800/10000 puntos
+Fallo en (log_beta=0.6877, log_p=-5.4344)
+  Progreso ODEINT bivariado: 5850/10000 puntos
+Fallo en (log_beta=0.6877, log_p=-5.1520)
+Fallo en (log_beta=0.6877, log_p=-5.1364)
+  Progreso ODEINT bivariado: 5900/10000 puntos
+Fallo en (log_beta=0.6978, log_p=-5.5064)
+Fallo en (log_beta=0.6978, log_p=-5.3354)
+  Progreso ODEINT bivariado: 5950/10000 puntos
+Fallo en (log_beta=0.6978, log_p=-5.1839)
+  Progreso ODEINT bivariado: 6000/10000 puntos
+Fallo en (log_beta=0.7079, log_p=-5.4003)
+Fallo en (log_beta=0.7079, log_p=-5.2113)
+  Progreso ODEINT bivariado: 6050/10000 puntos
+Fallo en (log_beta=0.7079, log_p=-5.1520)
+Fallo en (log_beta=0.7079, log_p=-5.1010)
+Fallo en (log_beta=0.7079, log_p=-4.9662)
+  Progreso ODEINT bivariado: 6100/10000 puntos
+Fallo en (log_beta=0.7180, log_p=-5.3804)
+Fallo en (log_beta=0.7180, log_p=-5.3354)
+Fallo en (log_beta=0.7180, log_p=-5.2863)
+  Progreso ODEINT bivariado: 6150/10000 puntos
+Fallo en (log_beta=0.7180, log_p=-5.1110)
+Fallo en (log_beta=0.7180, log_p=-5.0960)
+Fallo en (log_beta=0.7180, log_p=-5.0813)
+Fallo en (log_beta=0.7180, log_p=-5.0477)
+  Progreso ODEINT bivariado: 6200/10000 puntos
+  Progreso ODEINT bivariado: 6250/10000 puntos
+  Progreso ODEINT bivariado: 6300/10000 puntos
+Fallo en (log_beta=0.7382, log_p=-5.4344)
+  Progreso ODEINT bivariado: 6350/10000 puntos
+Fallo en (log_beta=0.7382, log_p=-5.1364)
+Fallo en (log_beta=0.7382, log_p=-5.0106)
+  Progreso ODEINT bivariado: 6400/10000 puntos
+Fallo en (log_beta=0.7483, log_p=-5.4698)
+Fallo en (log_beta=0.7483, log_p=-5.3804)
+  Progreso ODEINT bivariado: 6450/10000 puntos
+Fallo en (log_beta=0.7483, log_p=-5.1785)
+Fallo en (log_beta=0.7483, log_p=-5.1572)
+Fallo en (log_beta=0.7483, log_p=-5.0383)
+  Progreso ODEINT bivariado: 6500/10000 puntos
+Fallo en (log_beta=0.7584, log_p=-5.5215)
+Fallo en (log_beta=0.7584, log_p=-5.4990)
+Fallo en (log_beta=0.7584, log_p=-5.4414)
+Fallo en (log_beta=0.7584, log_p=-5.4071)
+Fallo en (log_beta=0.7584, log_p=-5.2685)
+  Progreso ODEINT bivariado: 6550/10000 puntos
+Fallo en (log_beta=0.7584, log_p=-5.0016)
+  Progreso ODEINT bivariado: 6600/10000 puntos
+Fallo en (log_beta=0.7685, log_p=-5.3870)
+Fallo en (log_beta=0.7685, log_p=-5.3608)
+  Progreso ODEINT bivariado: 6650/10000 puntos
+  Progreso ODEINT bivariado: 6700/10000 puntos
+Fallo en (log_beta=0.7786, log_p=-5.5215)
+Fallo en (log_beta=0.7786, log_p=-5.4626)
+  Progreso ODEINT bivariado: 6750/10000 puntos
+  Progreso ODEINT bivariado: 6800/10000 puntos
+Fallo en (log_beta=0.7887, log_p=-5.3544)
+Fallo en (log_beta=0.7887, log_p=-5.3105)
+Fallo en (log_beta=0.7887, log_p=-5.2510)
+  Progreso ODEINT bivariado: 6850/10000 puntos
+Fallo en (log_beta=0.7887, log_p=-5.1364)
+  Progreso ODEINT bivariado: 6900/10000 puntos
+Fallo en (log_beta=0.7988, log_p=-5.4138)
+  Progreso ODEINT bivariado: 6950/10000 puntos
+  Progreso ODEINT bivariado: 7000/10000 puntos
+Fallo en (log_beta=0.8089, log_p=-5.4698)
+Fallo en (log_beta=0.8089, log_p=-5.4414)
+Fallo en (log_beta=0.8089, log_p=-5.3044)
+  Progreso ODEINT bivariado: 7050/10000 puntos
+Fallo en (log_beta=0.8089, log_p=-4.9971)
+  Progreso ODEINT bivariado: 7100/10000 puntos
+Fallo en (log_beta=0.8190, log_p=-5.3738)
+Fallo en (log_beta=0.8190, log_p=-5.3544)
+  Progreso ODEINT bivariado: 7150/10000 puntos
+Fallo en (log_beta=0.8190, log_p=-5.2003)
+Fallo en (log_beta=0.8190, log_p=-5.1839)
+Fallo en (log_beta=0.8190, log_p=-5.1160)
+Fallo en (log_beta=0.8190, log_p=-5.0290)
+Fallo en (log_beta=0.8190, log_p=-4.9926)
+  Progreso ODEINT bivariado: 7200/10000 puntos
+Fallo en (log_beta=0.8291, log_p=-5.2744)
+  Progreso ODEINT bivariado: 7250/10000 puntos
+Fallo en (log_beta=0.8291, log_p=-5.1364)
+Fallo en (log_beta=0.8291, log_p=-5.0524)
+Fallo en (log_beta=0.8291, log_p=-4.9618)
+  Progreso ODEINT bivariado: 7300/10000 puntos
+Fallo en (log_beta=0.8392, log_p=-5.4003)
+Fallo en (log_beta=0.8392, log_p=-5.2452)
+  Progreso ODEINT bivariado: 7350/10000 puntos
+  Progreso ODEINT bivariado: 7400/10000 puntos
+Fallo en (log_beta=0.8493, log_p=-5.4275)
+Fallo en (log_beta=0.8493, log_p=-5.3608)
+Fallo en (log_beta=0.8493, log_p=-5.2395)
+  Progreso ODEINT bivariado: 7450/10000 puntos
+Fallo en (log_beta=0.8493, log_p=-5.0619)
+Fallo en (log_beta=0.8493, log_p=-5.0430)
+  Progreso ODEINT bivariado: 7500/10000 puntos
+Fallo en (log_beta=0.8594, log_p=-5.3673)
+Fallo en (log_beta=0.8594, log_p=-5.3167)
+Fallo en (log_beta=0.8594, log_p=-5.2626)
+  Progreso ODEINT bivariado: 7550/10000 puntos
+Fallo en (log_beta=0.8594, log_p=-4.9837)
+  Progreso ODEINT bivariado: 7600/10000 puntos
+Fallo en (log_beta=0.8695, log_p=-5.3804)
+  Progreso ODEINT bivariado: 7650/10000 puntos
+  Progreso ODEINT bivariado: 7700/10000 puntos
+Fallo en (log_beta=0.8796, log_p=-5.2058)
+  Progreso ODEINT bivariado: 7750/10000 puntos
+Fallo en (log_beta=0.8796, log_p=-5.1572)
+  Progreso ODEINT bivariado: 7800/10000 puntos
+Fallo en (log_beta=0.8897, log_p=-5.2169)
+  Progreso ODEINT bivariado: 7850/10000 puntos
+Fallo en (log_beta=0.8897, log_p=-5.1364)
+  Progreso ODEINT bivariado: 7900/10000 puntos
+Fallo en (log_beta=0.8998, log_p=-5.5139)
+Fallo en (log_beta=0.8998, log_p=-5.4626)
+Fallo en (log_beta=0.8998, log_p=-5.3544)
+Fallo en (log_beta=0.8998, log_p=-5.2803)
+Fallo en (log_beta=0.8998, log_p=-5.2510)
+Fallo en (log_beta=0.8998, log_p=-5.2225)
+Fallo en (log_beta=0.8998, log_p=-5.2113)
+  Progreso ODEINT bivariado: 7950/10000 puntos
+Fallo en (log_beta=0.8998, log_p=-5.1364)
+Fallo en (log_beta=0.8998, log_p=-5.1211)
+  Progreso ODEINT bivariado: 8000/10000 puntos
+Fallo en (log_beta=0.9099, log_p=-5.5215)
+Fallo en (log_beta=0.9099, log_p=-5.5139)
+Fallo en (log_beta=0.9099, log_p=-5.4626)
+Fallo en (log_beta=0.9099, log_p=-5.2113)
+  Progreso ODEINT bivariado: 8050/10000 puntos
+Fallo en (log_beta=0.9099, log_p=-5.1948)
+Fallo en (log_beta=0.9099, log_p=-5.1839)
+Fallo en (log_beta=0.9099, log_p=-5.1732)
+Fallo en (log_beta=0.9099, log_p=-5.1625)
+Fallo en (log_beta=0.9099, log_p=-5.1520)
+  Progreso ODEINT bivariado: 8100/10000 puntos
+Fallo en (log_beta=0.9200, log_p=-5.4138)
+Fallo en (log_beta=0.9200, log_p=-5.2225)
+Fallo en (log_beta=0.9200, log_p=-5.2169)
+  Progreso ODEINT bivariado: 8150/10000 puntos
+  Progreso ODEINT bivariado: 8200/10000 puntos
+Fallo en (log_beta=0.9301, log_p=-5.3870)
+Fallo en (log_beta=0.9301, log_p=-5.3738)
+Fallo en (log_beta=0.9301, log_p=-5.3044)
+Fallo en (log_beta=0.9301, log_p=-5.2510)
+Fallo en (log_beta=0.9301, log_p=-5.2452)
+  Progreso ODEINT bivariado: 8250/10000 puntos
+Fallo en (log_beta=0.9301, log_p=-5.1948)
+Fallo en (log_beta=0.9301, log_p=-5.1893)
+Fallo en (log_beta=0.9301, log_p=-5.0861)
+  Progreso ODEINT bivariado: 8300/10000 puntos
+  Progreso ODEINT bivariado: 8350/10000 puntos
+Fallo en (log_beta=0.9402, log_p=-5.1893)
+Fallo en (log_beta=0.9402, log_p=-5.1572)
+Fallo en (log_beta=0.9402, log_p=-5.1364)
+  Progreso ODEINT bivariado: 8400/10000 puntos
+Fallo en (log_beta=0.9503, log_p=-5.3936)
+Fallo en (log_beta=0.9503, log_p=-5.3608)
+Fallo en (log_beta=0.9503, log_p=-5.2338)
+  Progreso ODEINT bivariado: 8450/10000 puntos
+Fallo en (log_beta=0.9503, log_p=-5.1261)
+Fallo en (log_beta=0.9503, log_p=-5.0244)
+Fallo en (log_beta=0.9503, log_p=-4.9926)
+  Progreso ODEINT bivariado: 8500/10000 puntos
+Fallo en (log_beta=0.9604, log_p=-5.4990)
+Fallo en (log_beta=0.9604, log_p=-5.2510)
+  Progreso ODEINT bivariado: 8550/10000 puntos
+Fallo en (log_beta=0.9604, log_p=-5.1948)
+Fallo en (log_beta=0.9604, log_p=-5.1313)
+Fallo en (log_beta=0.9604, log_p=-5.0813)
+Fallo en (log_beta=0.9604, log_p=-4.9882)
+  Progreso ODEINT bivariado: 8600/10000 puntos
+Fallo en (log_beta=0.9705, log_p=-5.2983)
+Fallo en (log_beta=0.9705, log_p=-5.2510)
+  Progreso ODEINT bivariado: 8650/10000 puntos
+Fallo en (log_beta=0.9705, log_p=-5.1416)
+Fallo en (log_beta=0.9705, log_p=-5.1160)
+  Progreso ODEINT bivariado: 8700/10000 puntos
+Fallo en (log_beta=0.9806, log_p=-5.3354)
+Fallo en (log_beta=0.9806, log_p=-5.3044)
+Fallo en (log_beta=0.9806, log_p=-5.2568)
+  Progreso ODEINT bivariado: 8750/10000 puntos
+Fallo en (log_beta=0.9806, log_p=-5.1948)
+Fallo en (log_beta=0.9806, log_p=-5.0524)
+Fallo en (log_beta=0.9806, log_p=-4.9837)
+Fallo en (log_beta=0.9806, log_p=-4.9662)
+  Progreso ODEINT bivariado: 8800/10000 puntos
+Fallo en (log_beta=0.9907, log_p=-5.4770)
+Fallo en (log_beta=0.9907, log_p=-5.4555)
+Fallo en (log_beta=0.9907, log_p=-5.2626)
+  Progreso ODEINT bivariado: 8850/10000 puntos
+Fallo en (log_beta=0.9907, log_p=-5.1785)
+Fallo en (log_beta=0.9907, log_p=-5.1059)
+  Progreso ODEINT bivariado: 8900/10000 puntos
+Fallo en (log_beta=1.0008, log_p=-5.4843)
+Fallo en (log_beta=1.0008, log_p=-5.4698)
+  Progreso ODEINT bivariado: 8950/10000 puntos
+Fallo en (log_beta=1.0008, log_p=-5.1948)
+Fallo en (log_beta=1.0008, log_p=-5.1785)
+Fallo en (log_beta=1.0008, log_p=-5.1160)
+Fallo en (log_beta=1.0008, log_p=-5.1110)
+  Progreso ODEINT bivariado: 9000/10000 puntos
+Fallo en (log_beta=1.0109, log_p=-5.4698)
+Fallo en (log_beta=1.0109, log_p=-5.3480)
+Fallo en (log_beta=1.0109, log_p=-5.2281)
+  Progreso ODEINT bivariado: 9050/10000 puntos
+Fallo en (log_beta=1.0109, log_p=-5.1010)
+Fallo en (log_beta=1.0109, log_p=-5.0911)
+Fallo en (log_beta=1.0109, log_p=-4.9837)
+  Progreso ODEINT bivariado: 9100/10000 puntos
+Fallo en (log_beta=1.0210, log_p=-5.5064)
+Fallo en (log_beta=1.0210, log_p=-5.3480)
+Fallo en (log_beta=1.0210, log_p=-5.2510)
+  Progreso ODEINT bivariado: 9150/10000 puntos
+Fallo en (log_beta=1.0210, log_p=-5.0667)
+  Progreso ODEINT bivariado: 9200/10000 puntos
+  Progreso ODEINT bivariado: 9250/10000 puntos
+Fallo en (log_beta=1.0311, log_p=-5.1948)
+Fallo en (log_beta=1.0311, log_p=-5.1572)
+  Progreso ODEINT bivariado: 9300/10000 puntos
+Fallo en (log_beta=1.0412, log_p=-5.4770)
+  Progreso ODEINT bivariado: 9350/10000 puntos
+Fallo en (log_beta=1.0412, log_p=-5.1364)
+Fallo en (log_beta=1.0412, log_p=-5.1059)
+Fallo en (log_beta=1.0412, log_p=-5.0572)
+  Progreso ODEINT bivariado: 9400/10000 puntos
+Fallo en (log_beta=1.0513, log_p=-5.4484)
+  Progreso ODEINT bivariado: 9450/10000 puntos
+Fallo en (log_beta=1.0513, log_p=-4.9618)
+  Progreso ODEINT bivariado: 9500/10000 puntos
+Fallo en (log_beta=1.0614, log_p=-5.4275)
+  Progreso ODEINT bivariado: 9550/10000 puntos
+  Progreso ODEINT bivariado: 9600/10000 puntos
+Fallo en (log_beta=1.0715, log_p=-5.4770)
+Fallo en (log_beta=1.0715, log_p=-5.2626)
+Fallo en (log_beta=1.0715, log_p=-5.2338)
+  Progreso ODEINT bivariado: 9650/10000 puntos
+Fallo en (log_beta=1.0715, log_p=-5.0016)
+Fallo en (log_beta=1.0715, log_p=-4.9882)
+  Progreso ODEINT bivariado: 9700/10000 puntos
+Fallo en (log_beta=1.0816, log_p=-5.4770)
+Fallo en (log_beta=1.0816, log_p=-5.3167)
+Fallo en (log_beta=1.0816, log_p=-5.2923)
+  Progreso ODEINT bivariado: 9750/10000 puntos
+Fallo en (log_beta=1.0816, log_p=-5.0336)
+Fallo en (log_beta=1.0816, log_p=-4.9793)
+  Progreso ODEINT bivariado: 9800/10000 puntos
+Fallo en (log_beta=1.0917, log_p=-5.5139)
+Fallo en (log_beta=1.0917, log_p=-5.3804)
+  Progreso ODEINT bivariado: 9850/10000 puntos
+Fallo en (log_beta=1.0917, log_p=-5.0667)
+  Progreso ODEINT bivariado: 9900/10000 puntos
+Fallo en (log_beta=1.1018, log_p=-5.5139)
+Fallo en (log_beta=1.1018, log_p=-5.4990)
+Fallo en (log_beta=1.1018, log_p=-5.4484)
+Fallo en (log_beta=1.1018, log_p=-5.4003)
+Fallo en (log_beta=1.1018, log_p=-5.3804)
+Fallo en (log_beta=1.1018, log_p=-5.3044)
+Fallo en (log_beta=1.1018, log_p=-5.2281)
+Fallo en (log_beta=1.1018, log_p=-5.2169)
+Fallo en (log_beta=1.1018, log_p=-5.2058)
+  Progreso ODEINT bivariado: 9950/10000 puntos
+Fallo en (log_beta=1.1018, log_p=-5.0861)
+Fallo en (log_beta=1.1018, log_p=-5.0715)
+Fallo en (log_beta=1.1018, log_p=-5.0524)
+Fallo en (log_beta=1.1018, log_p=-4.9662)
+  Progreso ODEINT bivariado: 10000/10000 puntos
+Zode_bI0
+  Progreso ODEINT bivariado: 50/10000 puntos
+  Progreso ODEINT bivariado: 100/10000 puntos
+  Progreso ODEINT bivariado: 150/10000 puntos
+  Progreso ODEINT bivariado: 200/10000 puntos
+Fallo en (log_beta=0.1220, log_I0=10.6017)
+  Progreso ODEINT bivariado: 250/10000 puntos
+  Progreso ODEINT bivariado: 300/10000 puntos
+  Progreso ODEINT bivariado: 350/10000 puntos
+  Progreso ODEINT bivariado: 400/10000 puntos
+  Progreso ODEINT bivariado: 450/10000 puntos
+  Progreso ODEINT bivariado: 500/10000 puntos
+  Progreso ODEINT bivariado: 550/10000 puntos
+  Progreso ODEINT bivariado: 600/10000 puntos
+  Progreso ODEINT bivariado: 650/10000 puntos
+  Progreso ODEINT bivariado: 700/10000 puntos
+  Progreso ODEINT bivariado: 750/10000 puntos
+  Progreso ODEINT bivariado: 800/10000 puntos
+  Progreso ODEINT bivariado: 850/10000 puntos
+  Progreso ODEINT bivariado: 900/10000 puntos
+  Progreso ODEINT bivariado: 950/10000 puntos
+  Progreso ODEINT bivariado: 1000/10000 puntos
+  Progreso ODEINT bivariado: 1050/10000 puntos
+  Progreso ODEINT bivariado: 1100/10000 puntos
+  Progreso ODEINT bivariado: 1150/10000 puntos
+  Progreso ODEINT bivariado: 1200/10000 puntos
+  Progreso ODEINT bivariado: 1250/10000 puntos
+  Progreso ODEINT bivariado: 1300/10000 puntos
+  Progreso ODEINT bivariado: 1350/10000 puntos
+  Progreso ODEINT bivariado: 1400/10000 puntos
+  Progreso ODEINT bivariado: 1450/10000 puntos
+  Progreso ODEINT bivariado: 1500/10000 puntos
+  Progreso ODEINT bivariado: 1550/10000 puntos
+  Progreso ODEINT bivariado: 1600/10000 puntos
+  Progreso ODEINT bivariado: 1650/10000 puntos
+  Progreso ODEINT bivariado: 1700/10000 puntos
+  Progreso ODEINT bivariado: 1750/10000 puntos
+  Progreso ODEINT bivariado: 1800/10000 puntos
+  Progreso ODEINT bivariado: 1850/10000 puntos
+  Progreso ODEINT bivariado: 1900/10000 puntos
+  Progreso ODEINT bivariado: 1950/10000 puntos
+  Progreso ODEINT bivariado: 2000/10000 puntos
+  Progreso ODEINT bivariado: 2050/10000 puntos
+  Progreso ODEINT bivariado: 2100/10000 puntos
+  Progreso ODEINT bivariado: 2150/10000 puntos
+  Progreso ODEINT bivariado: 2200/10000 puntos
+  Progreso ODEINT bivariado: 2250/10000 puntos
+  Progreso ODEINT bivariado: 2300/10000 puntos
+  Progreso ODEINT bivariado: 2350/10000 puntos
+  Progreso ODEINT bivariado: 2400/10000 puntos
+  Progreso ODEINT bivariado: 2450/10000 puntos
+  Progreso ODEINT bivariado: 2500/10000 puntos
+  Progreso ODEINT bivariado: 2550/10000 puntos
+  Progreso ODEINT bivariado: 2600/10000 puntos
+  Progreso ODEINT bivariado: 2650/10000 puntos
+  Progreso ODEINT bivariado: 2700/10000 puntos
+  Progreso ODEINT bivariado: 2750/10000 puntos
+  Progreso ODEINT bivariado: 2800/10000 puntos
+  Progreso ODEINT bivariado: 2850/10000 puntos
+  Progreso ODEINT bivariado: 2900/10000 puntos
+  Progreso ODEINT bivariado: 2950/10000 puntos
+  Progreso ODEINT bivariado: 3000/10000 puntos
+  Progreso ODEINT bivariado: 3050/10000 puntos
+  Progreso ODEINT bivariado: 3100/10000 puntos
+  Progreso ODEINT bivariado: 3150/10000 puntos
+  Progreso ODEINT bivariado: 3200/10000 puntos
+  Progreso ODEINT bivariado: 3250/10000 puntos
+  Progreso ODEINT bivariado: 3300/10000 puntos
+  Progreso ODEINT bivariado: 3350/10000 puntos
+  Progreso ODEINT bivariado: 3400/10000 puntos
+  Progreso ODEINT bivariado: 3450/10000 puntos
+  Progreso ODEINT bivariado: 3500/10000 puntos
+  Progreso ODEINT bivariado: 3550/10000 puntos
+  Progreso ODEINT bivariado: 3600/10000 puntos
+  Progreso ODEINT bivariado: 3650/10000 puntos
+  Progreso ODEINT bivariado: 3700/10000 puntos
+  Progreso ODEINT bivariado: 3750/10000 puntos
+  Progreso ODEINT bivariado: 3800/10000 puntos
+  Progreso ODEINT bivariado: 3850/10000 puntos
+  Progreso ODEINT bivariado: 3900/10000 puntos
+  Progreso ODEINT bivariado: 3950/10000 puntos
+  Progreso ODEINT bivariado: 4000/10000 puntos
+  Progreso ODEINT bivariado: 4050/10000 puntos
+  Progreso ODEINT bivariado: 4100/10000 puntos
+  Progreso ODEINT bivariado: 4150/10000 puntos
+  Progreso ODEINT bivariado: 4200/10000 puntos
+  Progreso ODEINT bivariado: 4250/10000 puntos
+  Progreso ODEINT bivariado: 4300/10000 puntos
+  Progreso ODEINT bivariado: 4350/10000 puntos
+  Progreso ODEINT bivariado: 4400/10000 puntos
+  Progreso ODEINT bivariado: 4450/10000 puntos
+  Progreso ODEINT bivariado: 4500/10000 puntos
+  Progreso ODEINT bivariado: 4550/10000 puntos
+  Progreso ODEINT bivariado: 4600/10000 puntos
+  Progreso ODEINT bivariado: 4650/10000 puntos
+  Progreso ODEINT bivariado: 4700/10000 puntos
+  Progreso ODEINT bivariado: 4750/10000 puntos
+  Progreso ODEINT bivariado: 4800/10000 puntos
+  Progreso ODEINT bivariado: 4850/10000 puntos
+  Progreso ODEINT bivariado: 4900/10000 puntos
+  Progreso ODEINT bivariado: 4950/10000 puntos
+  Progreso ODEINT bivariado: 5000/10000 puntos
+  Progreso ODEINT bivariado: 5050/10000 puntos
+  Progreso ODEINT bivariado: 5100/10000 puntos
+  Progreso ODEINT bivariado: 5150/10000 puntos
+  Progreso ODEINT bivariado: 5200/10000 puntos
+  Progreso ODEINT bivariado: 5250/10000 puntos
+  Progreso ODEINT bivariado: 5300/10000 puntos
+  Progreso ODEINT bivariado: 5350/10000 puntos
+  Progreso ODEINT bivariado: 5400/10000 puntos
+  Progreso ODEINT bivariado: 5450/10000 puntos
+  Progreso ODEINT bivariado: 5500/10000 puntos
+  Progreso ODEINT bivariado: 5550/10000 puntos
+  Progreso ODEINT bivariado: 5600/10000 puntos
+  Progreso ODEINT bivariado: 5650/10000 puntos
+  Progreso ODEINT bivariado: 5700/10000 puntos
+  Progreso ODEINT bivariado: 5750/10000 puntos
+  Progreso ODEINT bivariado: 5800/10000 puntos
+  Progreso ODEINT bivariado: 5850/10000 puntos
+  Progreso ODEINT bivariado: 5900/10000 puntos
+  Progreso ODEINT bivariado: 5950/10000 puntos
+  Progreso ODEINT bivariado: 6000/10000 puntos
+  Progreso ODEINT bivariado: 6050/10000 puntos
+  Progreso ODEINT bivariado: 6100/10000 puntos
+  Progreso ODEINT bivariado: 6150/10000 puntos
+  Progreso ODEINT bivariado: 6200/10000 puntos
+  Progreso ODEINT bivariado: 6250/10000 puntos
+  Progreso ODEINT bivariado: 6300/10000 puntos
+  Progreso ODEINT bivariado: 6350/10000 puntos
+  Progreso ODEINT bivariado: 6400/10000 puntos
+  Progreso ODEINT bivariado: 6450/10000 puntos
+  Progreso ODEINT bivariado: 6500/10000 puntos
+  Progreso ODEINT bivariado: 6550/10000 puntos
+  Progreso ODEINT bivariado: 6600/10000 puntos
+  Progreso ODEINT bivariado: 6650/10000 puntos
+  Progreso ODEINT bivariado: 6700/10000 puntos
+  Progreso ODEINT bivariado: 6750/10000 puntos
+  Progreso ODEINT bivariado: 6800/10000 puntos
+  Progreso ODEINT bivariado: 6850/10000 puntos
+  Progreso ODEINT bivariado: 6900/10000 puntos
+  Progreso ODEINT bivariado: 6950/10000 puntos
+  Progreso ODEINT bivariado: 7000/10000 puntos
+  Progreso ODEINT bivariado: 7050/10000 puntos
+  Progreso ODEINT bivariado: 7100/10000 puntos
+  Progreso ODEINT bivariado: 7150/10000 puntos
+  Progreso ODEINT bivariado: 7200/10000 puntos
+  Progreso ODEINT bivariado: 7250/10000 puntos
+  Progreso ODEINT bivariado: 7300/10000 puntos
+  Progreso ODEINT bivariado: 7350/10000 puntos
+  Progreso ODEINT bivariado: 7400/10000 puntos
+  Progreso ODEINT bivariado: 7450/10000 puntos
+  Progreso ODEINT bivariado: 7500/10000 puntos
+  Progreso ODEINT bivariado: 7550/10000 puntos
+  Progreso ODEINT bivariado: 7600/10000 puntos
+  Progreso ODEINT bivariado: 7650/10000 puntos
+  Progreso ODEINT bivariado: 7700/10000 puntos
+  Progreso ODEINT bivariado: 7750/10000 puntos
+  Progreso ODEINT bivariado: 7800/10000 puntos
+  Progreso ODEINT bivariado: 7850/10000 puntos
+  Progreso ODEINT bivariado: 7900/10000 puntos
+  Progreso ODEINT bivariado: 7950/10000 puntos
+  Progreso ODEINT bivariado: 8000/10000 puntos
+  Progreso ODEINT bivariado: 8050/10000 puntos
+  Progreso ODEINT bivariado: 8100/10000 puntos
+  Progreso ODEINT bivariado: 8150/10000 puntos
+  Progreso ODEINT bivariado: 8200/10000 puntos
+  Progreso ODEINT bivariado: 8250/10000 puntos
+  Progreso ODEINT bivariado: 8300/10000 puntos
+  Progreso ODEINT bivariado: 8350/10000 puntos
+  Progreso ODEINT bivariado: 8400/10000 puntos
+  Progreso ODEINT bivariado: 8450/10000 puntos
+  Progreso ODEINT bivariado: 8500/10000 puntos
+  Progreso ODEINT bivariado: 8550/10000 puntos
+  Progreso ODEINT bivariado: 8600/10000 puntos
+  Progreso ODEINT bivariado: 8650/10000 puntos
+  Progreso ODEINT bivariado: 8700/10000 puntos
+  Progreso ODEINT bivariado: 8750/10000 puntos
+  Progreso ODEINT bivariado: 8800/10000 puntos
+  Progreso ODEINT bivariado: 8850/10000 puntos
+Fallo en (log_beta=0.9907, log_I0=11.1270)
+  Progreso ODEINT bivariado: 8900/10000 puntos
+  Progreso ODEINT bivariado: 8950/10000 puntos
+  Progreso ODEINT bivariado: 9000/10000 puntos
+  Progreso ODEINT bivariado: 9050/10000 puntos
+  Progreso ODEINT bivariado: 9100/10000 puntos
+  Progreso ODEINT bivariado: 9150/10000 puntos
+  Progreso ODEINT bivariado: 9200/10000 puntos
+  Progreso ODEINT bivariado: 9250/10000 puntos
+  Progreso ODEINT bivariado: 9300/10000 puntos
+  Progreso ODEINT bivariado: 9350/10000 puntos
+  Progreso ODEINT bivariado: 9400/10000 puntos
+  Progreso ODEINT bivariado: 9450/10000 puntos
+  Progreso ODEINT bivariado: 9500/10000 puntos
+  Progreso ODEINT bivariado: 9550/10000 puntos
+  Progreso ODEINT bivariado: 9600/10000 puntos
+  Progreso ODEINT bivariado: 9650/10000 puntos
+Fallo en (log_beta=1.0715, log_I0=11.0254)
+  Progreso ODEINT bivariado: 9700/10000 puntos
+  Progreso ODEINT bivariado: 9750/10000 puntos
+  Progreso ODEINT bivariado: 9800/10000 puntos
+  Progreso ODEINT bivariado: 9850/10000 puntos
+  Progreso ODEINT bivariado: 9900/10000 puntos
+  Progreso ODEINT bivariado: 9950/10000 puntos
+Fallo en (log_beta=1.1018, log_I0=10.7743)
+  Progreso ODEINT bivariado: 10000/10000 puntos
+Zode_PTHETA
+
+Calculando perfiles univariados
+IC 95% para α: [0.0550, 0.4600]
+IC 95% para β: [3.9201, 5.1492]
+IC 95% para p: [0.006271, 0.009834]
+IC 95% para θ: [17.0184, 69.0130]
+IC 95% para I₀: [1133.5, 5942.4]
+
+Todos los resultados guardados en: outputs_seir_jalisco

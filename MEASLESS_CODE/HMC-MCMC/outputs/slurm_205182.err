@@ -1,0 +1,7 @@
+20:59:56 - cmdstanpy - INFO - Chain [1] start processing
+21:01:01 - cmdstanpy - INFO - Chain [1] done processing
+21:01:01 - cmdstanpy - WARNING - Non-fatal error during sampling:
+Exception: neg_binomial_2_lpmf: Location parameter is inf, but must be positive finite! (in 'seir_fracv.stan', line 159, column 4 to column 40)
+21:01:01 - cmdstanpy - WARNING - Some chains may have failed to converge.
+	Chain 1 had 3 divergent transitions (0.4%)
+	Use the "diagnose()" method on the CmdStanMCMC object to see further information.
