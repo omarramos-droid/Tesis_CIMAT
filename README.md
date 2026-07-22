@@ -4,13 +4,20 @@ Repositorio con los códigos utilizados para la estimación de parámetros y an�
 
 ## Estructura del repositorio
 ├── stan/ # Modelos en Stan
+
 │ ├── seir_frac_const.stan # Beta constante
+
 │ └── seir_fracv.stan # Beta variable
+
 │
 ├── scripts/ # Scripts de ejecución y análisis
+
 │ ├── run_model_stan_Jalisco.py # MCMC beta constante
+
 │ ├── run_model_stan_beta_var.py# MCMC beta variable
+
 │ ├── analyze_fit.py # Análisis beta constante
+
 │ └── analyzbv_fit.py # Análisis beta variable
 │
 ├── src/ # Módulos de post‑procesamiento
@@ -44,5 +51,5 @@ Repositorio con los códigos utilizados para la estimación de parámetros y an�
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/MEASLESS_CODE.git
+   git clone https://github.com/omarramos-droid/Tesis_CIMAT
    cd MEASLESS_CODE/HMC-MCMC
