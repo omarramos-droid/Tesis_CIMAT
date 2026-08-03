@@ -1,8 +1,6 @@
 # Fractional SEIR Model for Measles in Jalisco, Mexico
 
-[![Python Version](https://shields.io)](https://python.org)
-[![Stan](https://shields.io)](https://mc-stan.org)
-[![License: MIT](https://shields.io)](https://opensource.org)
+
 
 This repository contains the source code, statistical models, and optimization pipelines used for parameter estimation and dynamic analysis of a **Fractional-Order SEIR Model** applied to real-world measles outbreak data from Jalisco, Mexico.
 
